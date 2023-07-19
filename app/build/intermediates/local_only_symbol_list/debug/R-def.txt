@@ -1,0 +1,32 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+drawable scan_face_grid_detection
+drawable scan_face_icon
+drawable scan_qr_code_icon
+drawable scan_text_icon
+id action_homeFragment_to_scannerText
+id fragmentcontainer
+id homeFragment
+id home_nav_graph
+id scanQrCode
+id scanface
+id scanfacegriddetection
+id scannerText
+id scantextrecognition
+id scantxt
+id viewFinder
+layout activity_main
+layout home_fragment
+layout screen_scanner
+mipmap ic_launcher
+mipmap ic_launcher_round
+navigation home_nav_graph
+string app_name
+style Base.Theme.EarMLKit
+style Theme.EarMLKit
+xml backup_rules
+xml data_extraction_rules

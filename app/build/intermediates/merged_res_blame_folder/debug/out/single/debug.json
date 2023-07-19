@@ -1,0 +1,102 @@
+[
+    {
+        "merged": "C:\\Users\\JaMiK\\.gradle\\daemon\\8.0\\uz.gita.earmlkit.app-merged_res-63:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\JaMiK\\.gradle\\daemon\\8.0\\uz.gita.earmlkit.app-main-65:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\JaMiK\\.gradle\\daemon\\8.0\\uz.gita.earmlkit.app-merged_res-63:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\JaMiK\\.gradle\\daemon\\8.0\\uz.gita.earmlkit.app-main-65:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\JaMiK\\.gradle\\daemon\\8.0\\uz.gita.earmlkit.app-merged_res-63:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\JaMiK\\.gradle\\daemon\\8.0\\uz.gita.earmlkit.app-main-65:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\JaMiK\\.gradle\\daemon\\8.0\\uz.gita.earmlkit.app-merged_res-63:\\navigation_home_nav_graph.xml.flat",
+        "source": "C:\\Users\\JaMiK\\.gradle\\daemon\\8.0\\uz.gita.earmlkit.app-main-65:\\navigation\\home_nav_graph.xml"
+    },
+    {
+        "merged": "C:\\Users\\JaMiK\\.gradle\\daemon\\8.0\\uz.gita.earmlkit.app-merged_res-63:\\drawable_scan_qr_code_icon.png.flat",
+        "source": "C:\\Users\\JaMiK\\.gradle\\daemon\\8.0\\uz.gita.earmlkit.app-main-65:\\drawable\\scan_qr_code_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\JaMiK\\.gradle\\daemon\\8.0\\uz.gita.earmlkit.app-merged_res-63:\\drawable_scan_face_grid_detection.png.flat",
+        "source": "C:\\Users\\JaMiK\\.gradle\\daemon\\8.0\\uz.gita.earmlkit.app-main-65:\\drawable\\scan_face_grid_detection.png"
+    },
+    {
+        "merged": "C:\\Users\\JaMiK\\.gradle\\daemon\\8.0\\uz.gita.earmlkit.app-merged_res-63:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\JaMiK\\.gradle\\daemon\\8.0\\uz.gita.earmlkit.app-main-65:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\JaMiK\\.gradle\\daemon\\8.0\\uz.gita.earmlkit.app-merged_res-63:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\JaMiK\\.gradle\\daemon\\8.0\\uz.gita.earmlkit.app-main-65:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\JaMiK\\.gradle\\daemon\\8.0\\uz.gita.earmlkit.app-merged_res-63:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\JaMiK\\.gradle\\daemon\\8.0\\uz.gita.earmlkit.app-main-65:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\JaMiK\\.gradle\\daemon\\8.0\\uz.gita.earmlkit.app-merged_res-63:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\JaMiK\\.gradle\\daemon\\8.0\\uz.gita.earmlkit.app-main-65:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\JaMiK\\.gradle\\daemon\\8.0\\uz.gita.earmlkit.app-merged_res-63:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\JaMiK\\.gradle\\daemon\\8.0\\uz.gita.earmlkit.app-main-65:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\JaMiK\\.gradle\\daemon\\8.0\\uz.gita.earmlkit.app-merged_res-63:\\layout_screen_scanner.xml.flat",
+        "source": "C:\\Users\\JaMiK\\.gradle\\daemon\\8.0\\uz.gita.earmlkit.app-main-65:\\layout\\screen_scanner.xml"
+    },
+    {
+        "merged": "C:\\Users\\JaMiK\\.gradle\\daemon\\8.0\\uz.gita.earmlkit.app-merged_res-63:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\JaMiK\\.gradle\\daemon\\8.0\\uz.gita.earmlkit.app-main-65:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\JaMiK\\.gradle\\daemon\\8.0\\uz.gita.earmlkit.app-merged_res-63:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\JaMiK\\.gradle\\daemon\\8.0\\uz.gita.earmlkit.app-main-65:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\JaMiK\\.gradle\\daemon\\8.0\\uz.gita.earmlkit.app-merged_res-63:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\JaMiK\\.gradle\\daemon\\8.0\\uz.gita.earmlkit.app-main-65:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "uz.gita.earmlkit.app-merged_res-63:/layout_screen_scanner.xml.flat",
+        "source": "uz.gita.earmlkit.app-main-65:/layout/screen_scanner.xml"
+    },
+    {
+        "merged": "C:\\Users\\JaMiK\\.gradle\\daemon\\8.0\\uz.gita.earmlkit.app-merged_res-63:\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\JaMiK\\.gradle\\daemon\\8.0\\uz.gita.earmlkit.app-main-65:\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\JaMiK\\.gradle\\daemon\\8.0\\uz.gita.earmlkit.app-merged_res-63:\\drawable_scan_face_icon.webp.flat",
+        "source": "C:\\Users\\JaMiK\\.gradle\\daemon\\8.0\\uz.gita.earmlkit.app-main-65:\\drawable\\scan_face_icon.webp"
+    },
+    {
+        "merged": "C:\\Users\\JaMiK\\.gradle\\daemon\\8.0\\uz.gita.earmlkit.app-merged_res-63:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\JaMiK\\.gradle\\daemon\\8.0\\uz.gita.earmlkit.app-main-65:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\JaMiK\\.gradle\\daemon\\8.0\\uz.gita.earmlkit.app-merged_res-63:\\drawable_scan_text_icon.png.flat",
+        "source": "C:\\Users\\JaMiK\\.gradle\\daemon\\8.0\\uz.gita.earmlkit.app-main-65:\\drawable\\scan_text_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\JaMiK\\.gradle\\daemon\\8.0\\uz.gita.earmlkit.app-merged_res-63:\\layout_home_fragment.xml.flat",
+        "source": "C:\\Users\\JaMiK\\.gradle\\daemon\\8.0\\uz.gita.earmlkit.app-main-65:\\layout\\home_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\JaMiK\\.gradle\\daemon\\8.0\\uz.gita.earmlkit.app-merged_res-63:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\JaMiK\\.gradle\\daemon\\8.0\\uz.gita.earmlkit.app-main-65:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\JaMiK\\.gradle\\daemon\\8.0\\uz.gita.earmlkit.app-merged_res-63:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\JaMiK\\.gradle\\daemon\\8.0\\uz.gita.earmlkit.app-main-65:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\JaMiK\\.gradle\\daemon\\8.0\\uz.gita.earmlkit.app-merged_res-63:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\JaMiK\\.gradle\\daemon\\8.0\\uz.gita.earmlkit.app-main-65:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\JaMiK\\.gradle\\daemon\\8.0\\uz.gita.earmlkit.app-merged_res-63:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\JaMiK\\.gradle\\daemon\\8.0\\uz.gita.earmlkit.app-main-65:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    }
+]
