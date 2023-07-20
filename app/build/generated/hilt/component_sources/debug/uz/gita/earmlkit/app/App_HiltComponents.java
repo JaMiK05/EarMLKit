@@ -49,6 +49,7 @@ import javax.inject.Singleton;
 import uz.gita.earmlkit.MainActivity_GeneratedInjector;
 import uz.gita.earmlkit.di.NavigationModule;
 import uz.gita.earmlkit.presentation.screen.homefragment.HomeFragment_GeneratedInjector;
+import uz.gita.earmlkit.presentation.screen.scanbarcodefragment.ScanFaceFragment_GeneratedInjector;
 
 @Generated("dagger.hilt.processor.internal.root.RootProcessor")
 public final class App_HiltComponents {
@@ -220,7 +221,8 @@ public final class App_HiltComponents {
       DefaultViewModelFactories.FragmentEntryPoint,
       ViewComponentManager.ViewWithFragmentComponentBuilderEntryPoint,
       GeneratedComponent,
-      HomeFragment_GeneratedInjector {
+      HomeFragment_GeneratedInjector,
+      ScanFaceFragment_GeneratedInjector {
     @Subcomponent.Builder
     abstract interface Builder extends FragmentComponentBuilder {
     }

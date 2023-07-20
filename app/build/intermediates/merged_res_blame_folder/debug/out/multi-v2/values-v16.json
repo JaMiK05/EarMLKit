@@ -4,7 +4,17 @@
             "outputFile": "uz.gita.earmlkit.app-mergeDebugResources-61:/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\JaMiK\\.gradle\\caches\\transforms-3\\b44c36f5c4753456c82c0dd4adec39b2\\transformed\\appcompat-1.6.1\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Program Files\\Android\\Android Studio\\caches\\transforms-3\\2a2d22629891152151bd1ac2fece9dd8\\transformed\\core-1.9.0\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                },
+                {
+                    "source": "C:\\Program Files\\Android\\Android Studio\\caches\\transforms-3\\b44c36f5c4753456c82c0dd4adec39b2\\transformed\\appcompat-1.6.1\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -20,16 +30,6 @@
                         "endLines": "6",
                         "endColumns": "12",
                         "endOffsets": "289"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\JaMiK\\.gradle\\caches\\transforms-3\\2a2d22629891152151bd1ac2fece9dd8\\transformed\\core-1.9.0\\res\\values-v16\\values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
                     }
                 }
             ]

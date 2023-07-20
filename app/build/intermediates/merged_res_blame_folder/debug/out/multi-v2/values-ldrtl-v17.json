@@ -4,7 +4,7 @@
             "outputFile": "uz.gita.earmlkit.app-mergeDebugResources-61:/values-ldrtl-v17/values-ldrtl-v17.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\JaMiK\\.gradle\\caches\\transforms-3\\06b652183a1887cc6048728d3c2fee05\\transformed\\material-1.5.0\\res\\values-ldrtl-v17\\values-ldrtl-v17.xml",
+                    "source": "C:\\Program Files\\Android\\Android Studio\\caches\\transforms-3\\06b652183a1887cc6048728d3c2fee05\\transformed\\material-1.5.0\\res\\values-ldrtl-v17\\values-ldrtl-v17.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

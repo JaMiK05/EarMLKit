@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="16dp"
+    app:cardMaxElevation="10dp">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/blue"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="start|center"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="scanned barcode"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:justificationMode="inter_word"
+            android:paddingHorizontal="25dp"
+            android:paddingTop="25dp"
+            android:paddingBottom="10dp"
+            android:text="The scanned barcode url will redirect to this site"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,UnusedAttribute" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/urltxt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:justificationMode="inter_word"
+                android:text="https://www.google.com/search?q=translate+english+to+uzbek&amp;oq=t&amp;gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDkyBggCEEUYOzIGCAMQRRg7Mg0IBBAAGIMBGLEDGIAEMgYIBRBFGDwyBggGEEUYPDIGCAcQRRg80gEHOTAzajBqN6gCALACAA&amp;sourceid=chrome&amp;ie=UTF-8"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText,UnusedAttribute" />
+
+        </androidx.core.widget.NestedScrollView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:padding="4dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_cancel"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:text="No"
+                android:background="@drawable/secondary_btn"
+                android:textAllCaps="false"
+                android:textColor="#2F15D6"
+                tools:ignore="HardcodedText" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_edit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_intro_btn_next"
+                android:text="Yes"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

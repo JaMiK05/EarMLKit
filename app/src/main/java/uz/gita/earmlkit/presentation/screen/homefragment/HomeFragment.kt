@@ -30,14 +30,12 @@ class HomeFragment : Fragment(R.layout.home_fragment) {
         registerForActivityResult(ActivityResultContracts.RequestMultiplePermissions()) {}
 
     private fun requestPermission(): Boolean {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-            if (ContextCompat.checkSelfPermission(
-                    requireContext(), Manifest.permission.CAMERA
-                ) != PackageManager.PERMISSION_GRANTED
-            ) {
-                myPermissionRequest.launch(arrayOf(Manifest.permission.CAMERA))
-                return false
-            }
+        if (ContextCompat.checkSelfPermission(
+                requireContext(), Manifest.permission.CAMERA
+            ) != PackageManager.PERMISSION_GRANTED
+        ) {
+            myPermissionRequest.launch(arrayOf(Manifest.permission.CAMERA))
+            return false
         }
         return true
     }
@@ -52,6 +50,12 @@ class HomeFragment : Fragment(R.layout.home_fragment) {
                 if (!requestPermission()) return@setOnClickListener
                 lifecycleScope.launch {
                     navigator.navigateTo(HomeFragmentDirections.actionHomeFragmentToScannerText())
+                }
+            }
+            scanQrCode.setOnClickListener {
+                if (!requestPermission()) return@setOnClickListener
+                lifecycleScope.launch {
+                    navigator.navigateTo(HomeFragmentDirections.actionHomeFragmentToScanBarCodeFragment())
                 }
             }
 

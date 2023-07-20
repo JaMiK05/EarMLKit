@@ -16,7 +16,6 @@
         android:layout_height="145dp"
         android:layout_gravity="center|bottom"
         android:layout_marginBottom="5dp"
-        android:gravity="center"
         android:justificationMode="inter_word"
         android:textColor="@color/black"
         tools:ignore="UnusedAttribute" />

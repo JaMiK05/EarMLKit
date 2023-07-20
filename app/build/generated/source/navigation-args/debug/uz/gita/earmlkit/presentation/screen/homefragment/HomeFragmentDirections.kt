@@ -8,5 +8,8 @@ public class HomeFragmentDirections private constructor() {
   public companion object {
     public fun actionHomeFragmentToScannerText(): NavDirections =
         ActionOnlyNavDirections(R.id.action_homeFragment_to_scannerText)
+
+    public fun actionHomeFragmentToScanBarCodeFragment(): NavDirections =
+        ActionOnlyNavDirections(R.id.action_homeFragment_to_scanBarCodeFragment)
   }
 }

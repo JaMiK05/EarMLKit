@@ -8,15 +8,24 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="uz.gita.earmlkit.presentation.screen.homefragment.HomeFragment"
-        tools:layout="@layout/home_fragment"
-        android:label="HomeFragment" >
+        android:label="HomeFragment"
+        tools:layout="@layout/home_fragment">
         <action
             android:id="@+id/action_homeFragment_to_scannerText"
             app:destination="@id/scannerText" />
+        <action
+            android:id="@+id/action_homeFragment_to_scanBarCodeFragment"
+            app:destination="@id/scanBarCodeFragment" />
+
     </fragment>
     <fragment
         android:id="@+id/scannerText"
         android:name="uz.gita.earmlkit.presentation.screen.scannertext.ScannerText"
-        tools:layout="@layout/screen_scanner"
-        android:label="ScannerText" />
+        android:label="ScannerText"
+        tools:layout="@layout/screen_scanner" />
+    <fragment
+        android:id="@+id/scanBarCodeFragment"
+        android:name="uz.gita.earmlkit.presentation.screen.scanbarcodefragment.ScanFaceFragment"
+        android:label="ScanFaceFragment"
+        tools:layout="@layout/screen_scaneface" />
 </navigation>
