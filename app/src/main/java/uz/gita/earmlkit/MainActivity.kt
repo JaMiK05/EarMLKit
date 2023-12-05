@@ -15,11 +15,11 @@ class MainActivity : AppCompatActivity() {
     @Inject
     lateinit var navigationHandler: NavigationHandler
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val host = supportFragmentManager.findFragmentById(R.id.fragmentcontainer) as NavHostFragment
+        val host =
+            supportFragmentManager.findFragmentById(R.id.fragmentcontainer) as NavHostFragment
         val navController = host.navController
         navigationHandler
             .navigationBuffer
@@ -28,5 +28,4 @@ class MainActivity : AppCompatActivity() {
             }
             .launchIn(lifecycleScope)
     }
-
 }

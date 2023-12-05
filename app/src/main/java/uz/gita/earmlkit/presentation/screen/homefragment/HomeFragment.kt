@@ -4,6 +4,7 @@ import android.Manifest
 import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.content.ContextCompat
@@ -56,6 +57,13 @@ class HomeFragment : Fragment(R.layout.home_fragment) {
                 if (!requestPermission()) return@setOnClickListener
                 lifecycleScope.launch {
                     navigator.navigateTo(HomeFragmentDirections.actionHomeFragmentToScanBarCodeFragment())
+                }
+            }
+
+            scanposdetection.setOnClickListener {
+                if (!requestPermission()) return@setOnClickListener
+                lifecycleScope.launch {
+                    navigator.navigateTo(HomeFragmentDirections.actionHomeFragmentToScanBody())
                 }
             }
 

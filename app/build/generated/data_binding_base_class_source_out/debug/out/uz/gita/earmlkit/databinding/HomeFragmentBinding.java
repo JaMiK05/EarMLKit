@@ -23,21 +23,16 @@ public final class HomeFragmentBinding implements ViewBinding {
   public final CardView scanQrCode;
 
   @NonNull
-  public final CardView scanface;
-
-  @NonNull
-  public final CardView scanfacegriddetection;
+  public final CardView scanposdetection;
 
   @NonNull
   public final CardView scantextrecognition;
 
   private HomeFragmentBinding(@NonNull LinearLayout rootView, @NonNull CardView scanQrCode,
-      @NonNull CardView scanface, @NonNull CardView scanfacegriddetection,
-      @NonNull CardView scantextrecognition) {
+      @NonNull CardView scanposdetection, @NonNull CardView scantextrecognition) {
     this.rootView = rootView;
     this.scanQrCode = scanQrCode;
-    this.scanface = scanface;
-    this.scanfacegriddetection = scanfacegriddetection;
+    this.scanposdetection = scanposdetection;
     this.scantextrecognition = scantextrecognition;
   }
 
@@ -74,15 +69,9 @@ public final class HomeFragmentBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.scanface;
-      CardView scanface = ViewBindings.findChildViewById(rootView, id);
-      if (scanface == null) {
-        break missingId;
-      }
-
-      id = R.id.scanfacegriddetection;
-      CardView scanfacegriddetection = ViewBindings.findChildViewById(rootView, id);
-      if (scanfacegriddetection == null) {
+      id = R.id.scanposdetection;
+      CardView scanposdetection = ViewBindings.findChildViewById(rootView, id);
+      if (scanposdetection == null) {
         break missingId;
       }
 
@@ -92,8 +81,8 @@ public final class HomeFragmentBinding implements ViewBinding {
         break missingId;
       }
 
-      return new HomeFragmentBinding((LinearLayout) rootView, scanQrCode, scanface,
-          scanfacegriddetection, scantextrecognition);
+      return new HomeFragmentBinding((LinearLayout) rootView, scanQrCode, scanposdetection,
+          scantextrecognition);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

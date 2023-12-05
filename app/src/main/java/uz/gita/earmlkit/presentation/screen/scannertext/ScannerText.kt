@@ -1,7 +1,5 @@
 package uz.gita.earmlkit.presentation.screen.scannertext
 
-import android.R.attr.bitmap
-import android.graphics.RectF
 import android.os.Bundle
 import android.view.View
 import androidx.camera.core.*
@@ -9,9 +7,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.MutableLiveData
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.google.mlkit.vision.common.InputImage
-import com.google.mlkit.vision.text.Text.TextBlock
 import com.google.mlkit.vision.text.TextRecognition
-import com.google.mlkit.vision.text.TextRecognizer
 import com.google.mlkit.vision.text.latin.TextRecognizerOptions
 import uz.gita.earmlkit.R
 import uz.gita.earmlkit.databinding.ScreenScannerBinding
@@ -32,7 +28,6 @@ class ScannerText : Fragment(R.layout.screen_scanner) {
             }
         }
 
-
         val preview = binding.viewFinder
         startCamera(
             context = requireContext(),
@@ -43,9 +38,9 @@ class ScannerText : Fragment(R.layout.screen_scanner) {
         )
     }
 
-    override fun onDestroy() {
-        super.onDestroy()
+    override fun onDetach() {
         unbindCamera()
+        super.onDetach()
     }
 
 }

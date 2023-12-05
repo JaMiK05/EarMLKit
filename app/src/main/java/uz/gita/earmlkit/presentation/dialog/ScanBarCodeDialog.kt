@@ -1,19 +1,21 @@
-package uz.gita.earmlkit.presentation.screen.scanbarcodefragment
+package uz.gita.earmlkit.presentation.dialog
 
 import android.app.Dialog
 import android.content.Context
-import android.content.DialogInterface
-import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
-import android.net.Uri
 import android.os.Bundle
+import android.view.View
 import uz.gita.earmlkit.databinding.DialogScanBarcodeBinding
 
 /**
  *   Created by Jamik on 7/20/2023 ot 8:33 AM
  **/
-class ScanBarCodeDialog constructor(context: Context, private val url: String) : Dialog(context) {
+class ScanBarCodeDialog constructor(
+    context: Context,
+    private val url: String,
+    private val scanBarCode: ScanBarCode,
+) : Dialog(context) {
 
     private var listener: (() -> Unit)? = null
 
@@ -21,7 +23,6 @@ class ScanBarCodeDialog constructor(context: Context, private val url: String) :
     fun setListener(block: () -> Unit) {
         listener = block
     }
-
 
     fun setCancelListener(block: () -> Unit) {
         cancelListener = block
@@ -40,6 +41,8 @@ class ScanBarCodeDialog constructor(context: Context, private val url: String) :
             btnCancel.setOnClickListener {
                 dismiss()
             }
+            if (scanBarCode == ScanBarCode.Text)
+                btnEdit.visibility = View.GONE
             btnEdit.setOnClickListener {
                 listener?.invoke()
             }
@@ -51,4 +54,8 @@ class ScanBarCodeDialog constructor(context: Context, private val url: String) :
         super.dismiss()
     }
 
+}
+
+enum class ScanBarCode() {
+    Text, Barcode
 }

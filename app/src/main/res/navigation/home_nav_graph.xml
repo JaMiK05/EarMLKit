@@ -16,16 +16,26 @@
         <action
             android:id="@+id/action_homeFragment_to_scanBarCodeFragment"
             app:destination="@id/scanBarCodeFragment" />
-
+        <action
+            android:id="@+id/action_homeFragment_to_scanBody"
+            app:destination="@id/scanBody" />
     </fragment>
+
     <fragment
         android:id="@+id/scannerText"
         android:name="uz.gita.earmlkit.presentation.screen.scannertext.ScannerText"
         android:label="ScannerText"
         tools:layout="@layout/screen_scanner" />
+
     <fragment
         android:id="@+id/scanBarCodeFragment"
         android:name="uz.gita.earmlkit.presentation.screen.scanbarcodefragment.ScanFaceFragment"
         android:label="ScanFaceFragment"
         tools:layout="@layout/screen_scaneface" />
+    <fragment
+        android:id="@+id/scanBody"
+        tools:layout="@layout/screen_body"
+        android:name="uz.gita.earmlkit.presentation.screen.scanbody.ScanBody"
+        android:label="ScanBody" />
+
 </navigation>

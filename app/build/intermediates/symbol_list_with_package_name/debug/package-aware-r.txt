@@ -2511,6 +2511,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable camera
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -2592,6 +2593,8 @@ drawable notify_panel_notification_icon_bg
 drawable scan_face_grid_detection
 drawable scan_face_icon
 drawable scan_qr_code_icon
+drawable scan_selfi
+drawable scan_sticman
 drawable scan_text_icon
 drawable secondary_btn
 drawable test_custom_background
@@ -2660,6 +2663,7 @@ id action_container
 id action_context_bar
 id action_divider
 id action_homeFragment_to_scanBarCodeFragment
+id action_homeFragment_to_scanBody
 id action_homeFragment_to_scannerText
 id action_image
 id action_menu_divider
@@ -2953,10 +2957,12 @@ id performance
 id pin
 id position
 id postLayout
+id preview
 id progress_circular
 id progress_horizontal
 id radio
 id ratio
+id rect_overlay
 id rectangles
 id reverseSawtooth
 id right
@@ -2971,10 +2977,10 @@ id save_overlay_view
 id sawtooth
 id scale
 id scanBarCodeFragment
+id scanBody
 id scanQrCode
-id scanface
-id scanfacegriddetection
 id scannerText
+id scanposdetection
 id scantextrecognition
 id scantxt
 id screen
@@ -3064,6 +3070,7 @@ id textTop
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
+id text_view_id
 id textinput_counter
 id textinput_error
 id textinput_helper_text
@@ -3086,7 +3093,6 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
-id txt
 id unchecked
 id uniform
 id unlabeled
@@ -3271,6 +3277,7 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout screen_body
 layout screen_scaneface
 layout screen_scanner
 layout select_dialog_item_material

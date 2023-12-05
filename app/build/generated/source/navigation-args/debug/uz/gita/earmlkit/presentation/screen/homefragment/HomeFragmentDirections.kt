@@ -11,5 +11,8 @@ public class HomeFragmentDirections private constructor() {
 
     public fun actionHomeFragmentToScanBarCodeFragment(): NavDirections =
         ActionOnlyNavDirections(R.id.action_homeFragment_to_scanBarCodeFragment)
+
+    public fun actionHomeFragmentToScanBody(): NavDirections =
+        ActionOnlyNavDirections(R.id.action_homeFragment_to_scanBody)
   }
 }

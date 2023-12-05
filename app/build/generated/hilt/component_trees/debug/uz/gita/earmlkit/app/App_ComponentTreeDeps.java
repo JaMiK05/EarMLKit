@@ -41,6 +41,7 @@ import hilt_aggregated_deps._uz_gita_earmlkit_app_App_GeneratedInjector;
 import hilt_aggregated_deps._uz_gita_earmlkit_di_NavigationModule;
 import hilt_aggregated_deps._uz_gita_earmlkit_presentation_screen_homefragment_HomeFragment_GeneratedInjector;
 import hilt_aggregated_deps._uz_gita_earmlkit_presentation_screen_scanbarcodefragment_ScanFaceFragment_GeneratedInjector;
+import hilt_aggregated_deps._uz_gita_earmlkit_presentation_screen_scanbody_ScanBody_GeneratedInjector;
 
 @ComponentTreeDeps(
     rootDeps = _uz_gita_earmlkit_app_App.class,
@@ -85,7 +86,8 @@ import hilt_aggregated_deps._uz_gita_earmlkit_presentation_screen_scanbarcodefra
         _uz_gita_earmlkit_app_App_GeneratedInjector.class,
         _uz_gita_earmlkit_di_NavigationModule.class,
         _uz_gita_earmlkit_presentation_screen_homefragment_HomeFragment_GeneratedInjector.class,
-        _uz_gita_earmlkit_presentation_screen_scanbarcodefragment_ScanFaceFragment_GeneratedInjector.class
+        _uz_gita_earmlkit_presentation_screen_scanbarcodefragment_ScanFaceFragment_GeneratedInjector.class,
+        _uz_gita_earmlkit_presentation_screen_scanbody_ScanBody_GeneratedInjector.class
     }
 )
 public final class App_ComponentTreeDeps {

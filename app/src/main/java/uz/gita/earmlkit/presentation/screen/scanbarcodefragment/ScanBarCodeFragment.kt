@@ -4,7 +4,6 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import androidx.camera.core.CameraSelector
 import androidx.camera.core.ImageAnalysis
@@ -22,6 +21,8 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import uz.gita.earmlkit.R
 import uz.gita.earmlkit.databinding.ScreenScanefaceBinding
+import uz.gita.earmlkit.presentation.dialog.ScanBarCode
+import uz.gita.earmlkit.presentation.dialog.ScanBarCodeDialog
 import uz.gita.earmlkit.util.camera.startCamera
 import uz.gita.earmlkit.util.camera.unbindCamera
 
@@ -35,48 +36,21 @@ class ScanFaceFragment : Fragment(R.layout.screen_scaneface) {
     private var dialogParceUri: ScanBarCodeDialog? = null
     private var time = 0
     private val scope = lifecycleScope
-    private var barcode = ""
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val preview = binding.viewFinder
-        timeManage()
         startCamera(
             context = requireContext(),
             previews = preview,
             analys = BarcodeScanningAnalyzer { barcodes, width, height ->
                 binding.apply {
-                    txt.visibility = View.GONE
                     val resultText =
                         barcodes.joinToString(separator = "\n") { it.displayValue.toString() }
-                    if (resultText.startsWith("https://") && barcode != resultText) {
-                        dialogParceUri?.dismiss()
-                        dialogParceUri = null
-                        barcode = resultText
-                        dialogParceUri = ScanBarCodeDialog(requireContext(), resultText)
-                        dialogParceUri?.setListener {
-                            requireActivity().startActivity(
-                                Intent(
-                                    Intent.ACTION_VIEW,
-                                    Uri.parse(resultText)
-                                )
-                            )
-                            dialogParceUri?.dismiss()
-                        }
-                        dialogParceUri?.setCancelListener {
-                            barcode = ""
-                        }
-                        txt.visibility = View.GONE
-                        dialogParceUri?.show()
-                        time = 0
-                    } else if (barcode == resultText) {
-                        txt.text = ""
+                    if (resultText.startsWith("https://")) {
+                        openDialog(resultText = resultText, scanBarCode = ScanBarCode.Barcode)
                     } else {
-                        if (txt.text != resultText) {
-                            txt.visibility = View.VISIBLE
-                            txt.text = resultText
-                            time = 0
-                        }
+                        openDialog(resultText = resultText, scanBarCode = ScanBarCode.Text)
                     }
                 }
             },
@@ -85,24 +59,43 @@ class ScanFaceFragment : Fragment(R.layout.screen_scaneface) {
         )
     }
 
+    private fun openDialog(resultText: String, scanBarCode: ScanBarCode) {
+        if (time == 0) {
+            timeManage()
+            dialogParceUri?.dismiss()
+            dialogParceUri = null
+            dialogParceUri = ScanBarCodeDialog(requireContext(), resultText, scanBarCode)
+            dialogParceUri?.setListener {
+                requireActivity().startActivity(
+                    Intent(
+                        Intent.ACTION_VIEW, Uri.parse(resultText)
+                    )
+                )
+                dialogParceUri?.dismiss()
+            }
+            dialogParceUri?.setCancelListener {
+                time = 0
+            }
+            dialogParceUri?.show()
+        }
+    }
+
     override fun onDetach() {
         scope.cancel()
         unbindCamera()
         super.onDetach()
     }
 
-
     private fun timeManage() {
+        time = 1
         scope.launch {
             while (true) {
                 delay(1000)
                 time += 1
                 if (time == 10) {
-                    binding.apply {
-                        txt.text = ""
-                    }
                     dialogParceUri?.dismiss()
                     dialogParceUri = null
+                    break
                 }
             }
         }
@@ -121,16 +114,13 @@ class BarcodeScanningAnalyzer(
     override fun analyze(imageProxy: ImageProxy) {
         imageProxy.image?.let {
             val imageValue = InputImage.fromMediaImage(it, imageProxy.imageInfo.rotationDegrees)
-            scanner.process(imageValue)
-                .addOnSuccessListener { barcodes ->
-                    onBarcodeDetected(barcodes, imageValue.height, imageValue.width)
-                }
-                .addOnFailureListener { failure ->
-                    failure.printStackTrace()
-                }
-                .addOnCompleteListener {
-                    imageProxy.close()
-                }
+            scanner.process(imageValue).addOnSuccessListener { barcodes ->
+                onBarcodeDetected(barcodes, imageValue.height, imageValue.width)
+            }.addOnFailureListener { failure ->
+                failure.printStackTrace()
+            }.addOnCompleteListener {
+                imageProxy.close()
+            }
         }
     }
 }

@@ -34,6 +34,7 @@ import uz.gita.earmlkit.MainActivity_MembersInjector;
 import uz.gita.earmlkit.presentation.screen.homefragment.HomeFragment;
 import uz.gita.earmlkit.presentation.screen.homefragment.HomeFragment_MembersInjector;
 import uz.gita.earmlkit.presentation.screen.scanbarcodefragment.ScanFaceFragment;
+import uz.gita.earmlkit.presentation.screen.scanbody.ScanBody;
 import uz.gita.earmlkit.util.navigation.NavigationDispatcher;
 
 @DaggerGenerated
@@ -341,6 +342,10 @@ public final class DaggerApp_HiltComponents_SingletonC {
 
     @Override
     public void injectScanFaceFragment(ScanFaceFragment scanFaceFragment) {
+    }
+
+    @Override
+    public void injectScanBody(ScanBody scanBody) {
     }
 
     private HomeFragment injectHomeFragment2(HomeFragment instance) {

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "uz.gita.earmlkit.app-mergeDebugResources-61:/values-ldltr-v21/values-ldltr-v21.xml",
+            "outputFile": "uz.gita.earmlkit.app-mergeDebugResources-62:/values-ldltr-v21/values-ldltr-v21.xml",
             "map": [
                 {
-                    "source": "C:\\Program Files\\Android\\Android Studio\\caches\\transforms-3\\b44c36f5c4753456c82c0dd4adec39b2\\transformed\\appcompat-1.6.1\\res\\values-ldltr-v21\\values-ldltr-v21.xml",
+                    "source": "C:\\Program Files\\Android\\Android Studio1\\caches\\transforms-3\\b44c36f5c4753456c82c0dd4adec39b2\\transformed\\appcompat-1.6.1\\res\\values-ldltr-v21\\values-ldltr-v21.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

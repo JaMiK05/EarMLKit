@@ -39,7 +39,7 @@ fun startCamera(
             }
 
         try {
-            cameraProvider?.unbindAll()
+            unbindCamera()
             camera =
                 cameraProvider?.bindToLifecycle(lifecycle, cameraSelector, preview, imageAnalyzer)
 
@@ -51,8 +51,7 @@ fun startCamera(
 }
 
 fun unbindCamera() {
-    cameraProvider?.apply {
-        unbindAll()
-    }
+    cameraProvider?.unbindAll()
+
     camera = null
 }
